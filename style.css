@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e202b;
+}
+/* navigation start */
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #1e202b;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 420px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container li {
+  flex-grow: 1;
+  list-style: none;
+}
+
+.container a:hover {
+  color: #009ad8;
+  border: 2px solid #009ad8;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+/* navigation end */
+
+/* header start */
+.header {
+  background-image: url('img/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 380px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .city-input {
+  margin-top: 80px;
+  width: 69vw;
+  background-color: #1e202b;
+  height: 54px;
+  border: none;
+  padding-left: 30px;
+  color: white;
+  border-radius: 26px;
+}
+
+/* header end  */
+
+/* weather table start */
+.tabel {
+  font-family: 'Roboto', sans-serif;
+  margin-top: -140px;
+  /* width: 100%; */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* big card table start */
+
+.all-big {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+}
+
+.big-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 300px;
+  background-color: #323544;
+  border-radius: 10px 0 0px 10px;
+}
+
+.big-card img {
+  height: 110px;
+  padding-top: 20px;
+}
+
+.big-card h1 {
+  font-size: 90px;
+  color: white;
+}
+
+.big-card h2 {
+  font-size: 18px;
+  color: #bfc1c8;
+  padding-top: 30px;
+}
+.big-card p {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+
+  color: #bfc1c8;
+  font-size: 18px;
+  padding: 0 20px 0 3px;
+}
+.temp,
+.elements {
+  display: flex;
+  align-items: center;
+}
+
+.items {
+  padding-left: 20px;
+}
+
+.temp img {
+  width: 110px;
+  margin-left: 20px;
+}
+
+.elements img {
+  height: 60px;
+  padding-bottom: 20px;
+}
+/* big card table end  */
+/* small card table start */
+
+.all-small {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+}
+
+.small-cards {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 300px;
+  align-items: center;
+  background-color: #262936;
+  color: white;
+}
+
+.table-header {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #0000001a;
+}
+
+.small-cards img {
+  width: 60px;
+  padding-top: 60px;
+}
+
+.small-cards p {
+}
+
+.small-cards h1 {
+  font-size: 24px;
+  padding-top: 30px;
+}
+
+.small-cards h2 {
+  font-size: 18px;
+  color: #bfc1c8;
+}
+
+.small-cards:nth-child(even) {
+  background-color: #323544;
+}
+
+.small-cards:nth-last-child(1) {
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media screen and (max-width: 1700px) {
+  .temp h1 {
+    font-size: 74px;
+  }
+
+  .temp img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .flex-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .flex-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .all-small {
+    width: 100%;
+  }
+  .all-big {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .all-small {
+    flex-wrap: wrap;
+  }
+
+  .temp h1 {
+    font-size: 60px;
+  }
+
+  .temp img {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .temp h1 {
+    font-size: 50px;
+  }
+
+  .temp img {
+    width: 90px;
+  }
+
+  .big-card {
+    width: 80%;
+  }
+}
+
+/* weather table end */
+
+/* Web cam section start */
+.webcam-section {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.webcam-section .cam {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+.title {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  margin: 10vh 0 14px 15%;
+  color: #ffff;
+  font-weight: 300;
+}
+
+.webcam-section h2,
+h3 {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 12px 0;
+}
+
+.webcam-section h2 {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+
+  font-size: 16px;
+  color: #ffff;
+}
+
+.webcam-section h3 {
+  font-size: 14px;
+  color: #bfc1c8;
+}
+
+@media screen and (max-width: 1600px) {
+  .webcam-section {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .webcam-section .cam img {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .webcam-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .webcam-section .cam img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .webcam-section .cam img {
+    width: 360px;
+  }
+
+  .webcam-section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .webcam-section .cam img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .webcam-section .cam img {
+    width: 80vw;
+    margin-bottom: 50px;
+  }
+
+  .webcam-section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+#windy {
+  margin: 0 auto;
+  width: 71%;
+  height: 425px;
+  margin-bottom: 100px;
+}
+
+.title-map {
+  margin-top: 100px;
+}
+
+.foot {
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+  background-color: #262936;
+}
+
+.foot h1 {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #bfc1c8;
+  font-size: 100px;
+  padding-top: 4vh;
+  font-size: 20px;
+}
+/* web cam section end */

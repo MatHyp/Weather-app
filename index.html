@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://api.windy.com/assets/map-forecast/libBoot.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <img src="img/logo.png" alt="" />
+      <ul class="container">
+        <li><a href="#">Home</a></li>
+        <li><a href="">Live Cameras</a></li>
+        <li><a href="">Map</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <form action="#" class="flex-header">
+        <input
+          type="text"
+          placeholder="Find your location..."
+          class="city-input"
+        />
+        <input type="submit" value="Find" class="btn-find" />
+      </form>
+    </header>
+
+    <div class="tabel">
+      <div class="flex-container">
+        <div class="all-big">
+          <div class="big-card"></div>
+        </div>
+
+        <div class="all-small"></div>
+      </div>
+    </div>
+
+    <h1 class="title">Live cameras</h1>
+    <section class="webcam-section">
+      <div class="cam">
+        <img src="img/live-camera-1.jpg" alt="" />
+        <h2>New York</h2>
+        <h3>8 oct, 8:00AM</h3>
+      </div>
+
+      <div class="cam">
+        <img src="img/live-camera-2.jpg" alt="" />
+        <h2>New York</h2>
+        <h3>8 oct, 8:00AM</h3>
+      </div>
+
+      <div class="cam">
+        <img src="img/live-camera-3.jpg" alt="" />
+        <h2>New York</h2>
+        <h3>8 oct, 8:00AM</h3>
+      </div>
+
+      <div class="cam">
+        <img src="img/live-camera-4.jpg" alt="" />
+        <h2>New York</h2>
+        <h3>8 oct, 8:00AM</h3>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h1 class="title">Weather map</h1>
+      <div id="windy"></div>
+    </section>
+
+    <footer class="foot">
+      <h1>Copyright 2021 Creativity. All rights reserved.</h1>
+    </footer>
+
+    <!-- <p id="demo"></p>
+    <button onclick="getLocation()">Try It</button> -->
+  </body>
+</html>
